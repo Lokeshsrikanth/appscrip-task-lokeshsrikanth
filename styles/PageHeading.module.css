@@ -1,0 +1,59 @@
+.pageHeading {
+  padding: 50px 20px 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.subtext {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .pageHeading {
+    padding: 40px 20px 20px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+
+  .subtext {
+    font-size: 0.9rem;
+    padding: 0 12px;
+    line-height: 1.6;
+    color: #555;
+  }
+}
+
+@media (max-width: 480px) {
+  .pageHeading {
+    padding: 32px 16px 16px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+  }
+
+  .subtext {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    padding: 0 8px;
+    color: #666;
+  }
+}

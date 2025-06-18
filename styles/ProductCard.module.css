@@ -1,0 +1,153 @@
+.card {
+  background-color: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #eee;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  padding: 16px;
+}
+
+.wishlistBtn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.wishlistBtn:hover {
+  background: #f4f4f4;
+}
+
+.liked {
+  background-color: #ffe6eb;
+  box-shadow: 0 0 0 2px #ff4d6d50;
+}
+
+.details {
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.category {
+  font-size: 0.75rem;
+  color: #999;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.title {
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #333;
+  height: 2.6em;
+  overflow: hidden;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+}
+@media (max-width: 768px) {
+  .card {
+    border-radius: 10px;
+  }
+
+  .image {
+    padding: 12px;
+  }
+
+  .details {
+    padding: 12px;
+    gap: 4px;
+  }
+
+  .title {
+    font-size: 0.9rem;
+    height: auto;
+    line-height: 1.4;
+  }
+
+  .price {
+    font-size: 0.95rem;
+  }
+
+  .wishlistBtn {
+    padding: 4px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .category {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    border-radius: 8px;
+  }
+
+  .image {
+    padding: 10px;
+  }
+
+  .wishlistBtn {
+    top: 8px;
+    right: 8px;
+    padding: 3px;
+  }
+
+  .details {
+    padding: 10px 12px;
+    gap: 4px;
+  }
+
+  .title {
+    font-size: 0.87rem;
+    line-height: 1.4;
+    height: auto;
+  }
+
+  .price {
+    font-size: 0.88rem;
+  }
+
+  .category {
+    font-size: 0.72rem;
+    font-weight: 500;
+  }
+}
